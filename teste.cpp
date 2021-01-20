@@ -2,8 +2,8 @@
 
 using namespace std;
 
-int main(int argc, char const *argv[])
-{
-    cout<<"Hello World!";
-    return 0;
+int main(){
+    int i = 0;
+    printf("Hello World!\n");
+    i = 10;
 }
