@@ -1,16 +1,20 @@
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-  int a, b, c, aux;
+    float valor;
 
-  cin >> a >> b >> c;
+    cout << "Informe  um valor real: ";
 
-  aux = (a > b > c);
+    cin >> valor;
 
-  cout << a << " " << b << " " << c << endl;
+    cout << "Valor informado: " << valor << endl;
 
-	return 0;
+    valor = (int)(valor + 0.5);
+            //casting
+    cout << "Valor arredondado: " << valor << endl;
+
+    return 0;
 }
