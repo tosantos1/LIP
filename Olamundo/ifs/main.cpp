@@ -2,31 +2,35 @@
 
 using namespace std;
 
+//if(expressao1) {
+//    bloco;
+//}
+
+//if(expressao1) {
+//    bloco1;
+//} else {
+//    bloco2;
+//}
+
+
 int main()
 {
-    bool ensinoMedio, habilitacaoB, ensinoSuperior;
+    int numero, quadrado;
 
-    int experiencia, idade;
+    cout << "Informe o numero: ";
 
-    bool apto;
+    cin >> numero;
 
-    cout << "O candidato possui ensino medio (sim=1, nao=0) ? ";
+    if(numero < 10)
+    {
+        cout << "Numero informado menor do que 10. " << endl;1
+    }
+    else
+    {
+        quadrado = numero * numero;
 
-    cin >> ensinoMedio;
-
-    cout << " candidato possui habilitacao tipo b (sim=1, nao=0) ? ";
-
-    cin >> habilitacaoB;
-
-    cout << " Quantos anos de experiencia o candidato possui ? ";
-
-    cin >> experiencia;
-
-    // 0 || 1
-    apto = (ensinoMedio && experiencia >= 3 && habilitacaoB || (ensinoSuperior && habilitacaoB));
-
-    cout << "Candidato apto (sim=1, nao=0)?" << apto << endl;
-
+        cout << "Quadrado do numero informado: " << quadrado;
+    }
 
     return 0;
 }
