@@ -24,10 +24,14 @@ int main()
                    cout << "Aprovado" << endl;
         }
 
-    }else if (media < 5 || nota1 < 3 || nota2 < 3 || nota3 < 3 && media > 3) {
+    }else if (nota1 == 0 || nota2 == 0 || nota3 == 0){
+        cout <<"Reprovado" << endl;
+    }
+
+    else if (media < 5 || nota1 >= 3 || nota2 >= 3 || nota3 >= 3 ) {
         cout <<"Final" << endl;
 
-    }if (media < 3 && nota1 == 0 || nota2 == 0 || nota3 == 0){
+    }else if (media < 3 && nota1 == 0 || nota2 == 0 || nota3 == 0){
         cout <<"Reprovado" << endl;
     }
 
