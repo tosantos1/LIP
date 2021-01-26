@@ -15,6 +15,6 @@ cin >> x;
 int x, y;
 cin >> x;
 y = x > 10? x+3 : x*3;
-cout << "y" << y << endl;
+cout << "y = " << y << endl;
            return 0;
 }
