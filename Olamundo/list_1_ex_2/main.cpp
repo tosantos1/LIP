@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
     float nota1, nota2, nota3, media;
-    float aprovado, final, reprovado;
+
 
     cin >> nota1;
     cin >> nota2;
@@ -19,13 +19,18 @@ int main()
 
     media = (nota1 + nota2 + nota3)/3;
 
-    if(nota1 >= 3 && nota2 >= 3 && nota3 >= 3 ){
-        if(media >= 5){
-        cout << "Aprovado" << media << endl;
-    }if(media < 5 || nota1 < 3 || nota2 < 3 || nota3 < 3 ){
-                cout <<"Final" << media << endl;
+    if(nota1 >= 3 && nota2 >= 3 && nota3 >= 3 && media >= 5 ){
+        if(media>=5){
+                   cout << "Aprovado" << endl;
         }
 
+    }else if (media < 5 || nota1 < 3 || nota2 < 3 || nota3 < 3 && media > 3) {
+        cout <<"Final" << endl;
+
+    }if (media < 3 && nota1 == 0 || nota2 == 0 || nota3 == 0){
+        cout <<"Reprovado" << endl;
     }
+
     return 0;
+
 }
