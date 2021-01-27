@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1611777533 source:c:\users\tiago\documents\estudos\lip\olamundo\exer\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	<cstring>
+
