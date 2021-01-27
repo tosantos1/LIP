@@ -15,7 +15,7 @@ Se a equação possui duas raízes, imprima primero a raiz de menor valor.*/
 int main()
 {
     int a, b, c, delta;
-    int x1, x2;
+    float x1, x2;
 
     cin >> a;
     cin >> b;
@@ -27,15 +27,23 @@ int main()
         cout << "Sem raiz real" << endl;
     }else{
 
-        x1 = (-b + sqrt(delta))/2*a;
-        x2 = (-b - sqrt(delta))/2*a;
+        x1 = (-b + sqrt(delta))/(2*a);
+        x2 = (-b - sqrt(delta))/(2*a);
 
         if(x1 == x2){
 
             cout << "" << x1 << endl;
         }else {
+            if(x1 > x2){
 
-            cout << "" << x1 << "" << x2 << endl;
+            cout << "" << x2 << " " << x1 << endl;
+
+            }else{
+
+            cout << "" << x1 << " " << x2 << endl;
+
+            }
+
         }
 
     }
