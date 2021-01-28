@@ -17,6 +17,8 @@ int main()
         if(numero%10==7)
         {
             contSete++;
+
+
         }
 
         numero = numero/10; //Eliminar o ultimo digito
