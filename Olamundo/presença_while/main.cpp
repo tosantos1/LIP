@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -18,8 +18,8 @@ int main()
     hora = cont/3600;
     minuto = (cont%3600)/60;
     segundos = (cont%3600) %60;
-
-    cout <<"Massa Inicial: " << massai << "Massa final: " <<massaf << "Tempo Total: " << hora << ":" << minuto << ":" << segundos << endl;
+    cout << fixed << setprecision(2);
+    cout <<"Massa Inicial: " << massai << endl << "Massa final: " <<massaf << endl << "Tempo Total: " << hora << ":" << minuto << ":" << segundos << endl;
 
 
 
