@@ -4,6 +4,25 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    float massai, massaf;
+    int hora, minuto, segundos;
+    int cont = 0;
+
+    cin >> massai;
+
+    massaf=massai;
+    while(massaf >= 0.5){
+     massaf = massaf/2;
+     cont = cont +50;
+    }
+    hora = cont/3600;
+    minuto = (cont%3600)/60;
+    segundos = (cont%3600) %60;
+
+    cout <<"Massa Inicial: " << massai << "Massa final: " <<massaf << "Tempo Total: " << hora << ":" << minuto << ":" << segundos << endl;
+
+
+
+
     return 0;
 }
