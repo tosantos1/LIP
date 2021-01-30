@@ -10,6 +10,7 @@ int main()
     float peso;
     float altura;
     float imc;
+
     do{
         cout <<"Calculo do IMC: " << endl;
 
