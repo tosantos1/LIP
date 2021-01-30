@@ -18,7 +18,8 @@ int main()
     cin >> x;
 
 
-    while(termo > 1e-5){
+    while(termo > 1e-5)//1x10^5
+        {
         resultado = resultado + (sinal*termo);
         n++;
         sinal = sinal * -1.0;
