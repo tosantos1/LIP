@@ -51,16 +51,16 @@ int main()
             }
         case 'f':
             {
-                if(imc <= 20.7)
+                if(imc <= 19.1)
                 {
                     cout <<"Abaixo do peso. "<< endl;
-                }else if(imc > 20.7 && imc <= 26.4)
+                }else if(imc > 19.1 && imc <= 25.8)
                 {
                     cout <<"Peso normal." << endl;
-                }else if(imc > 26.4 && imc <= 27.8)
+                }else if(imc > 25.8 && imc <= 27.3)
                 {
                     cout << "Marginalmente acima do peso." << endl;
-                }else if(imc > 27.8 && imc <= 31.1)
+                }else if(imc > 27.3 && imc <= 32.3)
                 {
                     cout << "Acimad o peso." << endl;
                 }else{
