@@ -16,7 +16,7 @@ int main()
 
     cin >> i;
 
-    while(i>0){
+    while(i!=0){
 
         quantidade++;
         i = i/10;
